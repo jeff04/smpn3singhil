@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<div id="navbar"></div>
+<!-- ========== PAGE HERO ========== -->
+<div class="page-hero">
+  <div class="page-hero-eyebrow">SMPN 3 Singingi Hilir</div>
+  <h1 class="page-hero-title anim-fadeup anim-d1">Kontak &amp; Lokasi</h1>
+  <p class="page-hero-sub">
+    Kami siap membantu. Hubungi kami atau kunjungi langsung sekolah kami.
+  </p>
+</div>
+
+<!-- ========== KONTAK BODY ========== -->
+<div class="kontak-body">
+  <!-- Left: Info + Form -->
+  <div class="kontak-main">
+    <!-- Info Kontak -->
+    <section class="kontak-info-section">
+      <div class="p-label">INFORMASI KONTAK</div>
+      <div class="kontak-info-grid">
+        <div class="ki-card">
+          <div class="ki-icon">📍</div>
+          <div class="ki-lbl">ALAMAT</div>
+          <div class="ki-val">
+            Jl. Pendidikan No. 1<br />Pekanbaru, Riau 28111
+          </div>
+        </div>
+        <div class="ki-card">
+          <div class="ki-icon">📞</div>
+          <div class="ki-lbl">TELEPON</div>
+          <div class="ki-val">(0761) 123-4567<br />(0761) 123-4568</div>
+        </div>
+        <div class="ki-card">
+          <div class="ki-icon">✉️</div>
+          <div class="ki-lbl">EMAIL</div>
+          <div class="ki-val">
+            info@sman1contoh.sch.id<br />humas@sman1contoh.sch.id
+          </div>
+        </div>
+        <div class="ki-card">
+          <div class="ki-icon">🕐</div>
+          <div class="ki-lbl">JAM OPERASIONAL</div>
+          <div class="ki-val">Senin – Jumat<br />07.00 – 15.00 WIB</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="kontak-form-section">
+      <div class="p-label">KIRIM PESAN</div>
+      <p class="form-desc">
+        Punya pertanyaan? Isi formulir berikut dan kami akan merespons dalam 1–2
+        hari kerja.
+      </p>
+
+      <div class="form-wrap" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Nama Lengkap</label>
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-input"
+              placeholder="nama@email.com"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subjek</label>
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Topik pesan Anda"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Keperluan</label>
+          <select class="form-input form-select">
+            <option value="" disabled selected>Pilih keperluan</option>
+            <option>Informasi PPDB / Pendaftaran</option>
+            <option>Informasi Akademik</option>
+            <option>Kerjasama &amp; Kemitraan</option>
+            <option>Pengaduan</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Pesan</label>
+          <textarea
+            class="form-input form-textarea"
+            placeholder="Tulis pesan Anda di sini..."
+          ></textarea>
+        </div>
+        <button class="btn btn-dark" onclick="submitForm()" style="width: 100%">
+          Kirim Pesan
+        </button>
+      </div>
+
+      <!-- Success state -->
+      <div class="form-success" id="formSuccess" style="display: none">
+        <div class="fs-icon">✅</div>
+        <div class="fs-title">Pesan Terkirim!</div>
+        <div class="fs-sub">
+          Terima kasih. Kami akan menghubungi Anda dalam 1–2 hari kerja.
+        </div>
+        <button
+          class="btn btn-outline btn-sm"
+          style="margin-top: 20px"
+          onclick="resetForm()"
+        >
+          Kirim Pesan Lagi
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Right: Sidebar info -->
+  <div class="kontak-sidebar">
+    <!-- PPDB CTA -->
+    <div class="ppdb-cta">
+      <div class="ppdb-label">PENDAFTARAN SISWA BARU</div>
+      <div class="ppdb-title">PPDB 2026/2027</div>
+      <div class="ppdb-desc">
+        Pendaftaran online dibuka 20 April – 15 Mei 2026. Daftarkan putra-putri
+        Anda sekarang.
+      </div>
+      <div class="ppdb-status">
+        <span class="ppdb-dot"></span>
+        <span class="ppdb-status-txt">Pendaftaran Sedang Dibuka</span>
+      </div>
+      <a
+        href="#"
+        class="btn btn-primary"
+        style="display: block; text-align: center; margin-top: 18px"
+        >Daftar Online →</a
+      >
+    </div>
+
+    <!-- Sosial Media -->
+    <div class="sb-block-k">
+      <div class="p-label">MEDIA SOSIAL</div>
+      <div class="sosmed-list">
+        <a href="#" class="sosmed-item">
+          <div class="sosmed-icon">📘</div>
+          <div>
+            <div class="sosmed-name">Facebook</div>
+            <div class="sosmed-handle">@sman1contoh</div>
+          </div>
+        </a>
+        <a href="#" class="sosmed-item">
+          <div class="sosmed-icon">📸</div>
+          <div>
+            <div class="sosmed-name">Instagram</div>
+            <div class="sosmed-handle">@sman1_contoh</div>
+          </div>
+        </a>
+        <a href="#" class="sosmed-item">
+          <div class="sosmed-icon">▶️</div>
+          <div>
+            <div class="sosmed-name">YouTube</div>
+            <div class="sosmed-handle">SMPN 3 Singingi Hilir Official</div>
+          </div>
+        </a>
+        <a href="#" class="sosmed-item">
+          <div class="sosmed-icon">🐦</div>
+          <div>
+            <div class="sosmed-name">Twitter / X</div>
+            <div class="sosmed-handle">@sman1contoh</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="sb-block-k">
+      <div class="p-label">FAQ</div>
+      <div class="faq-list">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            Bagaimana cara mendaftar? <span class="faq-arrow">+</span>
+          </div>
+          <div class="faq-a">
+            Pendaftaran dilakukan secara online melalui halaman PPDB pada
+            website ini. Siapkan dokumen: ijazah, KK, akta lahir, dan rapor.
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            Apa saja jalur penerimaan? <span class="faq-arrow">+</span>
+          </div>
+          <div class="faq-a">
+            Tersedia jalur Zonasi, Afirmasi, Perpindahan Tugas Orang Tua, dan
+            Prestasi sesuai regulasi Kemendikbud.
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">
+            Apakah ada biaya pendaftaran? <span class="faq-arrow">+</span>
+          </div>
+          <div class="faq-a">
+            Tidak ada biaya pendaftaran. Proses seleksi dilakukan secara gratis
+            dan transparan.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MAP ========== -->
+<section class="section-sm section-white">
+  <div class="p-label" style="padding: 0 8%; margin-bottom: 16px">
+    LOKASI SEKOLAH
+  </div>
+  <!-- Ganti iframe src dengan embed Google Maps lokasi asli sekolah -->
+  <div class="map-wrap">
+    <div class="map-placeholder">
+      <div class="map-pin">📍</div>
+      <div class="map-addr">Jl. Pendidikan No. 1, Pekanbaru, Riau</div>
+      <p
+        style="
+          font-size: 12px;
+          color: var(--muted);
+          margin-top: 8px;
+          max-width: 300px;
+          text-align: center;
+        "
+      >
+        Ganti elemen ini dengan embed Google Maps.<br />
+        Contoh:
+        <code>&lt;iframe src="https://maps.google.com/..." ...&gt;</code>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">SMPN 3 Singingi Hilir</div>
+  <div class="footer-copy">
+    © 2026 SMPN 3 Singingi Hilir. Semua hak dilindungi.
+  </div>
+</footer>
+
+<style>
+  .kontak-body {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 0;
+    min-height: 60vh;
+  }
+  .kontak-main {
+    padding: 48px 6% 60px;
+    border-right: 0.5px solid var(--border);
+    background: var(--bg);
+  }
+  .kontak-sidebar {
+    padding: 40px 28px 60px;
+    background: var(--white);
+  }
+
+  /* Info grid */
+  .kontak-info-section {
+    margin-bottom: 48px;
+  }
+  .kontak-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .ki-card {
+    background: var(--white);
+    border: 0.5px solid var(--border);
+    border-radius: var(--r);
+    padding: 18px 20px;
+  }
+  .ki-icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .ki-lbl {
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    margin-bottom: 5px;
+  }
+  .ki-val {
+    font-size: 13px;
+    color: var(--mid);
+    line-height: 1.7;
+  }
+
+  /* Form */
+  .kontak-form-section {
+  }
+  .form-desc {
+    font-size: 13px;
+    color: var(--mid);
+    margin-bottom: 22px;
+    font-weight: 300;
+  }
+  .form-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .form-label {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+  .form-input {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--dark);
+    background: var(--white);
+    border: 0.5px solid var(--border);
+    border-radius: var(--r);
+    padding: 11px 14px;
+    outline: none;
+    transition: border-color var(--ease);
+    width: 100%;
+  }
+  .form-input:focus {
+    border-color: var(--mid);
+  }
+  .form-input::placeholder {
+    color: var(--muted);
+  }
+  .form-select {
+    cursor: pointer;
+  }
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+  }
+
+  .form-success {
+    text-align: center;
+    padding: 48px 24px;
+    background: var(--white);
+    border: 0.5px solid var(--border);
+    border-radius: var(--r);
+  }
+  .fs-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  .fs-title {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .fs-sub {
+    font-size: 13px;
+    color: var(--mid);
+    font-weight: 300;
+  }
+
+  /* Sidebar */
+  .ppdb-cta {
+    background: var(--dark);
+    border-radius: var(--r);
+    padding: 22px 20px;
+    margin-bottom: 28px;
+  }
+  .ppdb-label {
+    font-size: 8px;
+    color: #475569;
+    letter-spacing: 0.16em;
+    margin-bottom: 6px;
+  }
+  .ppdb-title {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: #f8fafc;
+    margin-bottom: 10px;
+  }
+  .ppdb-desc {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+  .ppdb-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .ppdb-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4ade80;
+    flex-shrink: 0;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+  .ppdb-status-txt {
+    font-size: 11px;
+    color: #4ade80;
+  }
+
+  .sb-block-k {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 0.5px solid var(--border2);
+  }
+  .sb-block-k:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .sosmed-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .sosmed-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 0.5px solid var(--border2);
+    color: var(--mid);
+    transition: color var(--ease);
+  }
+  .sosmed-item:last-child {
+    border-bottom: none;
+  }
+  .sosmed-item:hover {
+    color: var(--dark);
+  }
+  .sosmed-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .sosmed-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--dark);
+  }
+  .sosmed-handle {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 1px;
+  }
+
+  /* FAQ */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-item {
+    border-bottom: 0.5px solid var(--border2);
+    cursor: pointer;
+    padding: 12px 0;
+  }
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+  .faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--dark);
+  }
+  .faq-arrow {
+    font-size: 16px;
+    color: var(--muted);
+    transition: transform 0.3s;
+    font-weight: 300;
+  }
+  .faq-item.open .faq-arrow {
+    transform: rotate(45deg);
+  }
+  .faq-a {
+    font-size: 12px;
+    color: var(--mid);
+    line-height: 1.7;
+    font-weight: 300;
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease,
+      margin 0.3s ease;
+  }
+  .faq-item.open .faq-a {
+    max-height: 200px;
+    margin-top: 8px;
+  }
+
+  /* Map */
+  .map-wrap {
+    margin: 0 8%;
+    border-radius: var(--r);
+    overflow: hidden;
+    border: 0.5px solid var(--border);
+  }
+  .map-placeholder {
+    height: 280px;
+    background: var(--off);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .map-pin {
+    font-size: 40px;
+  }
+  .map-addr {
+    font-size: 13px;
+    color: var(--mid);
+  }
+  .map-wrap iframe {
+    width: 100%;
+    height: 280px;
+    border: none;
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    .kontak-body {
+      grid-template-columns: 1fr;
+    }
+    .kontak-main {
+      border-right: none;
+      border-bottom: 0.5px solid var(--border);
+      padding: 32px 6%;
+    }
+    .kontak-sidebar {
+      padding: 32px 6%;
+    }
+    .kontak-info-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+    .map-wrap {
+      margin: 0 6%;
+    }
+  }
+  @media (max-width: 500px) {
+    .kontak-info-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  function submitForm() {
+    const inputs = document.querySelectorAll(".form-input");
+    let valid = true;
+    inputs.forEach((inp) => {
+      if (!inp.value.trim()) {
+        inp.style.borderColor = "#fca5a5";
+        valid = false;
+      } else {
+        inp.style.borderColor = "";
+      }
+    });
+    if (!valid) return;
+    document.getElementById("contactForm").style.display = "none";
+    document.getElementById("formSuccess").style.display = "block";
+  }
+
+  function resetForm() {
+    document.querySelectorAll(".form-input").forEach((i) => (i.value = ""));
+    document.getElementById("contactForm").style.display = "flex";
+    document.getElementById("formSuccess").style.display = "none";
+  }
+
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains("open");
+    document
+      .querySelectorAll(".faq-item")
+      .forEach((f) => f.classList.remove("open"));
+    if (!isOpen) item.classList.add("open");
+  }
+</script>
+
+<script src="/assets/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+ const navbar=document.getElementById('navbar');
+ if(navbar){
+   try{
+    const r=await fetch('/components/nav.html');
+    navbar.innerHTML=await r.text();
+   }catch(e){console.log(e)}
+ }
+});
+</script>
+</body></html>

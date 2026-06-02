@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<div id="navbar"></div>
+<!-- ========== PAGE HERO ========== -->
+<div class="page-hero">
+  <div class="page-hero-eyebrow">SMPN 3 Singingi Hilir</div>
+  <h1 class="page-hero-title anim-fadeup anim-d1">Tenaga Pengajar</h1>
+  <p class="page-hero-sub">
+    Didukung oleh guru-guru berpengalaman dan berdedikasi tinggi.
+  </p>
+</div>
+
+<!-- ========== FILTER ========== -->
+<div class="guru-filter-bar">
+  <button class="gf-btn active" onclick="filterGuru('semua', this)">
+    Semua
+  </button>
+  <button class="gf-btn" onclick="filterGuru('ipa', this)">IPA</button>
+  <button class="gf-btn" onclick="filterGuru('ips', this)">IPS</button>
+  <button class="gf-btn" onclick="filterGuru('bahasa', this)">Bahasa</button>
+  <button class="gf-btn" onclick="filterGuru('ekstra', this)">
+    Ekstrakulikuler
+  </button>
+</div>
+
+<!-- ========== GURU GRID ========== -->
+<section class="section section-white">
+  <div class="guru-grid" id="guruGrid">
+    <div class="guru-card" data-kategori="ipa">
+      <!-- Ganti dengan: <img src="/assets/img/guru/1.jpg" ...> -->
+      <div class="guru-photo-wrap">
+        <img src="/assets/img/guru/1.jpg" ... />
+      </div>
+      <div class="guru-card-body">
+        <div class="guru-mapel-tag">MATEMATIKA</div>
+        <div class="guru-card-name">Budi Waluyo, S.Pd</div>
+        <div class="guru-card-info">12 tahun pengalaman</div>
+        <div class="guru-card-text">
+          Lulusan Universitas Riau. Spesialis kalkulus dan statistika. Peraih
+          penghargaan Guru Teladan Kota 2023.
+        </div>
+      </div>
+    </div>
+
+    <div class="guru-card" data-kategori="bahasa">
+      <div class="guru-photo-wrap">
+        <div class="guru-avatar-lg" style="background: #dbeafe; color: #3b82f6">
+          SR
+        </div>
+      </div>
+      <div class="guru-card-body">
+        <div class="guru-mapel-tag">BAHASA INDONESIA</div>
+        <div class="guru-card-name">Siti Rahayu, M.Pd</div>
+        <div class="guru-card-info">8 tahun pengalaman</div>
+        <div class="guru-card-text">
+          Magister Pendidikan Bahasa dari UNP. Pembina ekskul Jurnalistik dan
+          Sastra Sekolah.
+        </div>
+      </div>
+    </div>
+
+    <div class="guru-card" data-kategori="ipa">
+      <div class="guru-photo-wrap">
+        <div class="guru-avatar-lg" style="background: #dcfce7; color: #22c55e">
+          AR
+        </div>
+      </div>
+      <div class="guru-card-body">
+        <div class="guru-mapel-tag">FISIKA</div>
+        <div class="guru-card-name">Ahmad Rifai, S.T</div>
+        <div class="guru-card-info">6 tahun pengalaman</div>
+        <div class="guru-card-text">
+          Sarjana Teknik dari ITS Surabaya. Penggemar robotika dan elektronika
+          terapan.
+        </div>
+      </div>
+    </div>
+
+    <div class="guru-card" data-kategori="ipa">
+      <div class="guru-photo-wrap">
+        <div class="guru-avatar-lg" style="background: #fef3c7; color: #f59e0b">
+          DM
+        </div>
+      </div>
+      <div class="guru-card-body">
+        <div class="guru-mapel-tag">KIMIA</div>
+        <div class="guru-card-name">Dewi Maharani, M.Pd</div>
+        <div class="guru-card-info">10 tahun pengalaman</div>
+        <div class="guru-card-text">
+          Magister Kimia dari UI Jakarta. Pembina tim olimpiade kimia tingkat
+          nasional.
+        </div>
+      </div>
+    </div>
+
+    <div class="guru-card" data-kategori="bahasa">
+      <div class="guru-photo-wrap">
+        <div class="guru-avatar-lg" style="background: #fce7f3; color: #ec4899">
+          RP
+        </div>
+      </div>
+      <div class="guru-card-body">
+        <div class="guru-mapel-tag">BAHASA INGGRIS</div>
+        <div class="guru-card-name">Rina Pratiwi, S.Pd</div>
+        <div class="guru-card-info">9 tahun pengalaman</div>
+        <div class="guru-card-text">
+          Bersertifikat IELTS 8.0. Pembina English Club dan English Debate
+          Competition.
+        </div>
+      </div>
+    </div>
+
+    <div class="guru-card" data-kategori="ips">
+      <div class="guru-photo-wrap">
+        <div class="guru-avatar-lg" style="background: #ede9fe; color: #8b5cf6">
+          HS
+        </div>
+      </div>
+      <div class="guru-card-body">
+        <div class="guru-mapel-tag">SEJARAH</div>
+        <div class="guru-card-name">Hendra Saputra, M.Hum</div>
+        <div class="guru-card-info">15 tahun pengalaman</div>
+        <div class="guru-card-text">
+          Magister Humaniora dari UNRI. Penulis buku sejarah lokal Riau dan
+          budayawan daerah.
+        </div>
+      </div>
+    </div>
+
+    <div class="guru-card" data-kategori="ips">
+      <div class="guru-photo-wrap">
+        <div class="guru-avatar-lg" style="background: #fee2e2; color: #ef4444">
+          LA
+        </div>
+      </div>
+      <div class="guru-card-body">
+        <div class="guru-mapel-tag">EKONOMI</div>
+        <div class="guru-card-name">Lisa Anggraini, S.E</div>
+        <div class="guru-card-info">7 tahun pengalaman</div>
+        <div class="guru-card-text">
+          Sarjana Ekonomi dari Universitas Andalas. Pembina koperasi dan
+          wirausaha siswa.
+        </div>
+      </div>
+    </div>
+
+    <div class="guru-card" data-kategori="ekstra">
+      <div class="guru-photo-wrap">
+        <div class="guru-avatar-lg" style="background: #ecfeff; color: #06b6d4">
+          TN
+        </div>
+      </div>
+      <div class="guru-card-body">
+        <div class="guru-mapel-tag">PJOK</div>
+        <div class="guru-card-name">Teguh Nugroho, S.Or</div>
+        <div class="guru-card-info">11 tahun pengalaman</div>
+        <div class="guru-card-text">
+          Sarjana Olahraga UNESA. Pelatih futsal dan bulu tangkis. Mantan atlet
+          provinsi Riau.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">SMPN 3 Singingi Hilir</div>
+  <div class="footer-copy">
+    © 2026 SMPN 3 Singingi Hilir. Semua hak dilindungi.
+  </div>
+</footer>
+
+<style>
+  /* Filter bar */
+  .guru-filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 20px 8%;
+    background: var(--white);
+    border-bottom: 0.5px solid var(--border);
+  }
+  .gf-btn {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    background: transparent;
+    border: 0.5px solid var(--border);
+    padding: 7px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all var(--ease);
+  }
+  .gf-btn:hover {
+    color: var(--dark);
+    border-color: var(--dark);
+  }
+  .gf-btn.active {
+    background: var(--dark);
+    color: var(--white);
+    border-color: var(--dark);
+  }
+
+  /* Guru grid */
+  .guru-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .guru-card {
+    background: var(--white);
+    border: 0.5px solid var(--border);
+    border-radius: var(--r);
+    overflow: hidden;
+    transition:
+      box-shadow var(--ease),
+      transform var(--ease);
+  }
+  .guru-card:hover {
+    box-shadow: 0 6px 32px rgba(30, 41, 59, 0.08);
+    transform: translateY(-2px);
+  }
+  .guru-card.hidden {
+    display: none;
+  }
+
+  .guru-photo-wrap {
+    height: 160px;
+    background: var(--off);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .guru-photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .guru-avatar-lg {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--slate);
+  }
+  .guru-card-body {
+    padding: 16px 18px 20px;
+  }
+  .guru-mapel-tag {
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
+  }
+  .guru-card-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 3px;
+  }
+  .guru-card-info {
+    font-size: 10px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .guru-card-text {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--mid);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 1100px) {
+    .guru-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 800px) {
+    .guru-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 500px) {
+    .guru-grid {
+      grid-template-columns: 1fr;
+    }
+    .guru-filter-bar {
+      padding: 16px 5%;
+    }
+  }
+</style>
+
+<script>
+  function filterGuru(kat, btn) {
+    document
+      .querySelectorAll(".gf-btn")
+      .forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    document.querySelectorAll(".guru-card").forEach((card) => {
+      if (kat === "semua" || card.dataset.kategori === kat) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+  }
+</script>
+
+<script src="/assets/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+ const navbar=document.getElementById('navbar');
+ if(navbar){
+   try{
+    const r=await fetch('/components/nav.html');
+    navbar.innerHTML=await r.text();
+   }catch(e){console.log(e)}
+ }
+});
+</script>
+</body></html>

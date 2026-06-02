@@ -1,0 +1,150 @@
+/* ============================================
+   IMAGES — Object-fit utilities
+   Semua foto diatur ukurannya lewat CSS,
+   tidak perlu resize manual sebelum upload.
+============================================ */
+
+/* ---------- Wajib ada di semua foto ----------
+   Taruh class ini di <img> dan pastikan
+   parent-nya punya width + height yang ditentukan */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- Cover: foto memenuhi kotak ----------
+   Bagian tepi terpotong, tidak ada ruang kosong.
+   Gunakan untuk: hero, thumbnail berita, galeri, foto guru */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Variasi object-position untuk cover */
+.img-cover-top    { object-position: top; }
+.img-cover-bottom { object-position: bottom; }
+
+/* ---------- Contain: foto tampil utuh ----------
+   Foto tidak terpotong, mungkin ada ruang kosong di sisi.
+   Gunakan untuk: logo, ilustrasi, dokumen */
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* ---------- Container dengan rasio tetap ----------
+   Gunakan di element PEMBUNGKUS foto, bukan di <img>.
+   Tinggi otomatis mengikuti lebar → foto tidak gepeng/molor */
+.img-ratio-hero   { aspect-ratio: 16 / 6;  overflow: hidden; }
+.img-ratio-news   { aspect-ratio: 16 / 9;  overflow: hidden; }
+.img-ratio-square { aspect-ratio: 1 / 1;   overflow: hidden; }
+.img-ratio-thumb  { aspect-ratio: 4 / 3;   overflow: hidden; }
+.img-ratio-card   { aspect-ratio: 3 / 2;   overflow: hidden; }
+.img-ratio-tall   { aspect-ratio: 2 / 3;   overflow: hidden; }
+
+/* ---------- Container dengan tinggi tetap ----------
+   Gunakan saat ingin semua foto setinggi sama persis */
+.img-h-80  { height: 80px;  overflow: hidden; }
+.img-h-120 { height: 120px; overflow: hidden; }
+.img-h-160 { height: 160px; overflow: hidden; }
+.img-h-200 { height: 200px; overflow: hidden; }
+.img-h-240 { height: 240px; overflow: hidden; }
+.img-h-300 { height: 300px; overflow: hidden; }
+.img-h-400 { height: 400px; overflow: hidden; }
+
+/* ---------- Avatar / foto profil bulat ---------- */
+.img-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; /* fokus ke wajah */
+  border-radius: 50%;
+}
+
+/* ---------- Foto guru (kotak dengan sudut sedikit rounded) ---------- */
+.img-guru-wrap {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--off);
+}
+
+.img-guru-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ---------- Foto hero fullscreen ---------- */
+.img-hero-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.img-hero-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.45; /* gelap agar teks di atas terbaca */
+}
+
+/* ---------- Foto berita (thumbnail) ---------- */
+.img-berita-wrap {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--dark);
+}
+
+.img-berita-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.img-berita-wrap:hover img {
+  transform: scale(1.04); /* efek zoom halus saat hover */
+}
+
+/* ---------- Galeri grid ---------- */
+.img-galeri-wrap {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--dark);
+}
+
+.img-galeri-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.img-galeri-wrap:hover img {
+  transform: scale(1.06);
+}
+
+/* ---------- Foto profil sekolah (landscape lebar) ---------- */
+.img-profil-wrap {
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+  border-radius: var(--r);
+  background: var(--dark);
+}
+
+.img-profil-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

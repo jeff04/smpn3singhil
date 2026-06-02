@@ -1,0 +1,55 @@
+/* ============================================
+   COMPONENTS — Cards & Shared UI
+============================================ */
+
+/* ---------- Card base ---------- */
+.card {
+  background: var(--white);
+  border: 0.5px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: box-shadow var(--ease);
+}
+
+.card:hover {
+  box-shadow: 0 4px 24px rgba(30, 41, 59, 0.07);
+}
+
+.card-img   { width: 100%; object-fit: cover; }
+
+.card-body  { padding: 18px 20px 22px; }
+
+.card-tag {
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.card-date  { font-size: 10px; color: var(--muted); }
+.card-text  { font-size: 13px; color: var(--mid); line-height: 1.8; margin-top: 8px; }
+
+/* ---------- Utility label & divider ---------- */
+.p-label {
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.p-divider {
+  border: none;
+  border-top: 0.5px solid var(--border);
+  margin-bottom: 28px;
+}

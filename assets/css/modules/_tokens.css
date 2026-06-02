@@ -1,0 +1,28 @@
+/* ============================================
+   TOKENS — Design Variables
+   Ubah nilai di sini untuk mengganti tema global
+============================================ */
+:root {
+  /* Warna utama */
+  --dark:    #1e293b;
+  --dark2:   #263548;
+  --slate:   #334155;
+  --mid:     #64748b;
+  --muted:   #94a3b8;
+
+  /* Warna latar & border */
+  --border:  #e2e8f0;
+  --border2: #f1f5f9;
+  --bg:      #f8fafc;
+  --white:   #ffffff;
+  --off:     #f1f5f9;
+
+  /* Ukuran & spacing */
+  --nav-h:   58px;
+  --r:       3px;
+  --ease:    0.2s ease;
+
+  /* Tipografi */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'DM Sans', sans-serif;
+}

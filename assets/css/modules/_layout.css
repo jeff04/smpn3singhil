@@ -1,0 +1,97 @@
+/* ============================================
+   LAYOUT
+   - Page wrapper
+   - Section utilities
+   - Page hero band (inner pages)
+   - Footer
+============================================ */
+
+/* ---------- Page wrapper ---------- */
+.page-wrap {
+  padding-top: var(--nav-h);
+  min-height: 100vh;
+}
+
+/* ---------- Section utilities ---------- */
+.section    { padding: 80px 8%; }
+.section-sm { padding: 56px 8%; }
+
+.section-white { background: var(--white); }
+.section-dark  { background: var(--dark);  }
+.section-off   { background: var(--off);   }
+
+.section-eyebrow {
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-eyebrow::after {
+  content: '';
+  width: 28px;
+  height: 0.5px;
+  background: var(--border);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400;
+  color: var(--dark);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.section-title.light { color: #f8fafc; }
+
+/* ---------- Page hero band ---------- */
+.page-hero {
+  background: var(--dark);
+  padding: 56px 8% 48px;
+}
+
+.page-hero-eyebrow {
+  font-size: 9px;
+  color: #475569;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: #f8fafc;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+}
+
+.page-hero-sub {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: var(--dark);
+  padding: 28px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-top: 0.5px solid #263548;
+}
+
+.footer-logo { font-size: 12px; font-weight: 500; color: #64748b; letter-spacing: 0.1em; }
+.footer-copy { font-size: 11px; color: #475569; }

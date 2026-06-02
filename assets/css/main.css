@@ -1,0 +1,26 @@
+/* ============================================
+   MAIN CSS — Entry Point
+   Semua modul diimport di sini secara berurutan.
+   Jangan taruh style langsung di file ini.
+
+   Urutan import penting:
+   1. _tokens      → variabel global (harus pertama)
+   2. _reset       → normalisasi browser
+   3. _layout      → struktur halaman
+   4. _nav         → navigasi & drawer
+   5. _buttons     → tombol
+   6. _components  → card & UI kecil lainnya
+   7. _animations  → keyframes & utility class
+   8. _images      → object-fit & container foto
+   9. _responsive  → media queries (harus terakhir)
+============================================ */
+
+@import url('./modules/_tokens.css');
+@import url('./modules/_reset.css');
+@import url('./modules/_layout.css');
+@import url('./modules/_nav.css');
+@import url('./modules/_buttons.css');
+@import url('./modules/_components.css');
+@import url('./modules/_animations.css');
+@import url('./modules/_images.css');
+@import url('./modules/_responsive.css');

@@ -1,0 +1,33 @@
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+============================================ */
+
+/* ---------- Tablet & below (≤ 900px) ---------- */
+@media (max-width: 900px) {
+  /* Nav: collapse ke hamburger */
+  .nav-links,
+  .nav-cta      { display: none; }
+  .hamburger    { display: flex; }
+
+  /* Bottom nav muncul */
+  .bottom-nav   { display: block; }
+
+  /* Tambah padding bawah biar konten tidak ketutupan bottom nav */
+  .page-wrap    { padding-bottom: 68px; }
+
+  /* Section padding dikurangi */
+  .section,
+  .section-sm   { padding: 48px 6%; }
+
+  /* Page hero */
+  .page-hero    { padding: 40px 6% 36px; }
+
+  /* Footer */
+  .footer       { padding: 28px 6%; }
+}
+
+/* ---------- Mobile (≤ 600px) ---------- */
+@media (max-width: 600px) {
+  .section,
+  .section-sm   { padding: 40px 5%; }
+}
